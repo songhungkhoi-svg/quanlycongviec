@@ -1,0 +1,43 @@
+{
+  "name": "flowsync-desktop",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Phần mềm Quản lý công việc & Nhắc nhở thông minh Offline 100%",
+  "author": "FlowSync Team",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/canvas-confetti": "^1.9.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "canvas-confetti": "^1.9.4",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "vite": "^6.2.3"
+  },
+  "scripts": {
+    "dev:server": "tsx server.ts",
+    "start:server": "node dist/server.cjs",
+    "start": "electron .",
+    "preview": "vite preview",
+    "build:server": "esbuild server.ts --bundle --platform=node --format=cjs --outfile=dist/server.cjs",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "electron": "^38.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0"
+  }
+}
